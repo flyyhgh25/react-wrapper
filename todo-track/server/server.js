@@ -27,12 +27,30 @@ app.get("/api/tasks", (req, res) => {
 });
 
 app.post("/api/create", (req, res) => {
-  const { title } = req.body;
-  if (!title) {
-    res.status(400).json({ msg: "Please provide a title" });
+  const { title, account, note, status, progress, due_date } =
+    req.body;
+  if (
+    !title ||
+    !account ||
+    !note ||
+    !closed ||
+    !status ||
+    !progress ||
+    !due_date
+  ) {
+    res.status(400).json({ msg: "Please provide complete data" });
     return;
   }
-  const newTask = { id: nanoid(), title: title, isDone: false };
+  const newTask = {
+    id: nanoid(),
+    title: title,
+    isChecked: false,
+    account: account,
+    closed: false,
+    status: status,
+    progress: progress,
+    due_date: due_date,
+  };
   taskList = [...taskList, newTask];
   res.json({ task: newTask });
 });
