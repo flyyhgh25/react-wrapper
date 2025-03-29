@@ -1,12 +1,13 @@
 import "./App.css";
+import { Greeting } from "./components/Greeting";
 import Navbar from "./Navbar";
 
 function App() {
   return (
-    <>
-    <Navbar/>
-      <h1 className="text-3xl font-bold underline">Hwllo</h1>
-    </>
+    <div className="container-main">
+      <Navbar />
+      <Greeting/>
+    </div>
   );
 }
 

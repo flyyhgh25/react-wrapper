@@ -1,19 +1,29 @@
-import { links } from "../data";
+import { links, settings } from "../data";
 const Navbar = () => {
   return (
-    <nav className="text-indigo-500">
-      <div className="mx-auto max-w-7xl px-8 py-4 flex flex-col sm:flex-row sm:gap-x-16 sm:items-center sm:py-6">
-        <h2 className="text-3xl font-bold">
-          Web <span className="text-indigo-950"></span>
+    <nav>
+      <div className="flex p-5 items-center bg-blue-800/50">
+        <h2 className="text-3xl font-bold ">
+          Travelzy 
         </h2>
-        <div className="flex gap-x3">
+        <div className="flex-grow flex justify-center flex-row">
           {links.map((link) => {
             const { id, href, text } = link;
             return (
-              <a key={id} href={href} className="capitalize text-lg tracking-wide hover:text-emerald-600 duration-300">
+              <a key={id} href={href} className="mr-5">
                 {text}
               </a>
             );
+          })}
+        </div>
+        <div className="flex flex-row justify-evenly mr-5">
+          {settings.map((setting)=>{
+            const {id, href, text, icon} = setting;
+            return(
+              <a key={id} href={href} className="mr-5">
+                {icon}
+              </a>
+            )
           })}
         </div>
       </div>
