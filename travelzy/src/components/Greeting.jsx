@@ -2,28 +2,16 @@ import React from 'react'
 
 export const Greeting = () => {
     return (
-        <div className='absolute bottom-10 right-30 p-5 font-bold text-white'>
-            <div className="flex">
-                <div className="text">
-                    <h1 className="text-4xl ">Discover the Magic of Switzerland – Your Dream Trip Awaits!</h1>
-                    <p>Welcome to the ultimate Swiss adventure! Whether you're drawn to the breathtaking Alps,
-                        charming villages, or world-famous chocolates, Switzerland offers an unforgettable journey for every traveler.
-                        From exploring vibrant cities like Zurich and Geneva to skiing in the majestic mountains of Zermatt,
-                        your dream getaway starts here.
-                        Let us help you plan the perfect trip—where every moment is a postcard-worthy experience! 🌍✈️🏔️
-                        Start your Swiss adventure today!
-                    </p>
-                </div>
-                <div className="text">
-                    <h1 className="text-4xl ">Discover the Magic of Switzerland – Your Dream Trip Awaits!</h1>
-                    <p>Welcome to the ultimate Swiss adventure! Whether you're drawn to the breathtaking Alps,
-                        charming villages, or world-famous chocolates, Switzerland offers an unforgettable journey for every traveler.
-                        From exploring vibrant cities like Zurich and Geneva to skiing in the majestic mountains of Zermatt,
-                        your dream getaway starts here.
-                        Let us help you plan the perfect trip—where every moment is a postcard-worthy experience! 🌍✈️🏔️
-                        Start your Swiss adventure today!
-                    </p>
-                </div>
+        <div className='absolute bottom-40 right-30 p-5 text-white'>
+            <div className="text-center">
+                <h1 className="text-4xl font-bold ">Discover the Magic of Switzerland</h1>
+                <p>Welcome to the ultimate Swiss adventure! <br />
+                    Let us help you plan the perfect trip—where every moment is a postcard-worthy experience! 🌍🏔️
+                    Start your Swiss adventure today!
+                </p>
+                <button className='mt-5 bg-green-700 hover:bg-green-900 text-white fong-bold py-2 px-7 border border-green-800 hover:border-transparet rounded-full'>
+                    Start ✈️
+                </button>
             </div>
         </div>
     )

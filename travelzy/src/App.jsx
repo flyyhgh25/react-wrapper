@@ -4,10 +4,16 @@ import Navbar from "./Navbar";
 
 function App() {
   return (
-    <div className="container-main">
-      <Navbar />
-      <Greeting/>
+    <div>
+      <div className="container-main static">
+        <Navbar />
+        <Greeting />
+      </div>
+      <div className="">
+        ksssss
+      </div>
     </div>
+
   );
 }
 

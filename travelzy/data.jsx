@@ -13,16 +13,19 @@ export const settings = [
     id: nanoid(),
     href: '#theme',
     text: 'Theme',
-    icon: <FaSun className='h-5 w-5'/>
+    icon: <FaSun className='h-5 w-5' />
   },
-  { id: nanoid(),
-    href: '#search', 
+  {
+    id: nanoid(),
+    href: '#search',
     text: 'Search',
-    icon: <FaSearch className='h-5 w-5'/>},
-  { id: nanoid(), 
-    href: '#signUp', 
+    icon: <FaSearch className='h-5 w-5' />
+  },
+  {
+    id: nanoid(),
+    href: '#signUp',
     text: 'Sign Up',
-    icon: <FaPersonBooth className='h-5 w-5'/>
+    icon: <FaPersonBooth className='h-5 w-5' />
   },
 ]
 
